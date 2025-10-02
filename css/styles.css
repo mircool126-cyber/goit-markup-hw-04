@@ -3,6 +3,7 @@ body {
   color: #434455;
   background-color: #ffffff;
   font-weight: 400; /* за замовчуванням звичайний */
+  max-width: 1440px;
 }
 
 .text-color {
@@ -17,7 +18,9 @@ body {
 }
 /* хедер */
 .header {
-  justify-content: space-between;
+  display: flex; /* робимо флекс контейнер */
+  justify-content: space-between; /* лого зліва, меню+контакти вправо */
+  align-items: center; /* вирівнюємо по вертикалі */
 }
 
 .logo {
@@ -30,6 +33,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+  margin-left: 156px;
 }
 .logo-web {
   color: #2e2f42;
@@ -42,11 +46,29 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  display: flex; /* робить контейнер флексом */
+  justify-content: space-between; /* відсуває логотип вліво, меню вправо */
+  align-items: center; /* вирівнює по вертикалі */
+  gap: 40px;
 }
 
 .nav-list {
-  list-style: none;
-  margin: 0;
+  display: flex;
+  gap: 40px;
+}
+.nav-item a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 10px 0; /* вертикальний падінг для клікабельності */
+  text-decoration: none;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+  color: #404bbf;
 }
 .contacts {
   font-style: normal;
@@ -59,6 +81,10 @@ body {
   list-style: none;
   margin: 0;
   text-decoration: none;
+  display: flex; /* контакти в ряд */
+  gap: 40px;
+
+  padding: 0;
 }
 .contacts-item {
   color: #434455;
@@ -69,6 +95,12 @@ body {
 }
 .contacts-item:focus {
   color: #404bbf;
+}
+/* main container */
+.container {
+  max-width: 1158px; /* 1128px контент + 15px padding зліва + 15px справа */
+  padding: 0 15px; /* внутрішні відступи, щоб контент не лип до країв */
+  margin: 0 auto; /* вирівнює контейнер по центру екрана */
 }
 /* hero-block */
 .hero {
