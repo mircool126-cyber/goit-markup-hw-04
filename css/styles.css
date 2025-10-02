@@ -18,9 +18,12 @@ body {
 }
 /* хедер */
 .header {
-  display: flex; /* робимо флекс контейнер */
-  justify-content: space-between; /* лого зліва, меню+контакти вправо */
-  align-items: center; /* вирівнюємо по вертикалі */
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -33,28 +36,36 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-left: 156px;
 }
 .logo-web {
   color: #2e2f42;
 }
 
 .nav {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-decoration: none;
-  display: flex; /* робить контейнер флексом */
-  justify-content: space-between; /* відсуває логотип вліво, меню вправо */
-  align-items: center; /* вирівнює по вертикалі */
-  gap: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
   gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  display: block;
+  padding: 24px 0; /* клікабельна зона */
+  color: #2e2f42;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
 }
 .nav-item a {
   font-family: "Roboto", sans-serif;
@@ -66,41 +77,35 @@ body {
   padding: 10px 0; /* вертикальний падінг для клікабельності */
   text-decoration: none;
 }
-.nav-item a:hover,
-.nav-item a:focus {
-  color: #404bbf;
-}
+
 .contacts {
   font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .contacts-list {
+  display: flex;
+  gap: 40px;
   list-style: none;
   margin: 0;
-  text-decoration: none;
-  display: flex; /* контакти в ряд */
-  gap: 40px;
-
   padding: 0;
 }
 .contacts-item {
   color: #434455;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
-.contacts-item:hover {
-  color: #404bbf;
-}
+.contacts-item:hover,
 .contacts-item:focus {
   color: #404bbf;
 }
+
 /* main container */
 .container {
-  max-width: 1158px; /* 1128px контент + 15px padding зліва + 15px справа */
-  padding: 0 15px; /* внутрішні відступи, щоб контент не лип до країв */
-  margin: 0 auto; /* вирівнює контейнер по центру екрана */
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 /* hero-block */
 .hero {
