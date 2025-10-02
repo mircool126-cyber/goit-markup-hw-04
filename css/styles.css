@@ -19,13 +19,13 @@ body {
 /* хедер */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -46,8 +46,6 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-list {
