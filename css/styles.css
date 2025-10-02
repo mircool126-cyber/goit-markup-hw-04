@@ -9,8 +9,6 @@ body {
 .text-color {
   color: #2e2f42;
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .text-color:hover {
   color: #404bbf;
@@ -82,6 +80,8 @@ body {
 
 .contacts {
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts-list {
