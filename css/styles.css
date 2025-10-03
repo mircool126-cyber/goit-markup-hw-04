@@ -119,6 +119,8 @@ body {
   justify-content: center;
   text-align: center;
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -129,17 +131,22 @@ body {
   text-align: center;
   margin-bottom: 20px;
   color: #ffffff;
+  max-width: 496px;
 }
 
 .hero-btn {
   font-size: 16px;
   cursor: pointer;
-
-  background: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .hero-btn:hover {
   background-color: #404bbf;
