@@ -1,14 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
   font-weight: 400; /* за замовчуванням звичайний */
-  max-width: 1440px;
+  margin: 0; /* прибираємо відступи браузера */
+ 
 }
 .img {
   display: block; /* робимо блоковим */
   max-width: 100%; /* не виходить за межі контейнера */
   height: auto; /* зберігає пропорції */
+  
 }
 
 .text-color {
@@ -26,8 +34,6 @@ body {
 /* хедер */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-container {
   display: flex;
@@ -86,7 +92,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding: 10px 0; /* вертикальний падінг для клікабельності */
+
   text-decoration: none;
 }
 
@@ -115,17 +121,28 @@ body {
 
 /* main container */
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 1168px; /* ширина макету (може бути 1200px чи інша в Figma) */
+  margin: 0 auto; /* автоматичні відступи зліва і справа */
+  padding: 0 16px; /* невеликий "внутрішній" відступ, щоб контент не прилипав */
+  
 }
+
 /* hero-block */
 .hero {
-  justify-content: center;
-  text-align: center;
-  background: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  display: flex;
+  flex-direction: column; /* елементи підряд (заголовок і кнопка) */
+  justify-content: center; /* по вертикалі */
+  align-items: center; /* по горизонталі */
+  text-align: center; /* щоб текст був по центру */
+  min-height: 600px; /* або 100vh, якщо треба на весь екран */
+  background-color: #2e2f42;
+  color: #ffffff;
+  padding: 188px 0; /* можеш прибрати, бо flex вже центрує */
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* вирівнює кнопки і текст по центру */
 }
 
 .hero-title {
@@ -164,21 +181,12 @@ body {
 
 /* Features-block */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
+  
+  
+ 
 }
 
 .features-list {
@@ -191,7 +199,7 @@ body {
 .features-item {
   flex: 1;
   text-align: center;
-  margin-right: 24px;
+
   width: calc((100% - 72px) / 4);
 }
 
@@ -206,10 +214,7 @@ body {
   font-weight: 500;
   margin-bottom: 8px;
 }
-/* остання li */
-.features-item:last-child {
-  margin-right: 0;
-}
+
 
 .features-item-text {
   font-size: 16px;
@@ -221,53 +226,62 @@ body {
 }
 /* Team-block */
 .team {
+  padding: 120px 0;
   background-color: #f4f4fd;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+  text-align: center; /* Центрування заголовка */
 }
-.team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 40px;
-} /* Картки у ряд */
+.team-title{
+  font-size: 32px;  /* Розмір шрифту  */
+  font-weight: bold;  /*  жирний шрифт */
+  margin-bottom: 24px;  /* Відступ від заголовка до інших елементів */
+}
+
+.visually-hidden {
+  position: absolute;        /* Встановлює елемент поза потоком документа, щоб його не видно було на екрані */
+  width: 1px;                /* Ширина елемента — дуже мала, щоб він не був видимим */
+  height: 1px;               /* Висота елемента — також дуже мала */
+  margin: -1px;              /* Відступи елемента від його контейнера — зменшені, щоб приховати елемент */
+  border: 0;                 /* Прибирає будь-які межі, щоб елемент не був видимим */
+  padding: 0;                /* Встановлює внутрішні відступи на 0 */
+  white-space: nowrap;       /* Забороняє перенесення тексту на новий рядок */
+  clip-path: inset(100%);    /* Обрізає елемент на 100% з усіх боків, роблячи його повністю невидимим */
+  clip: rect(0 0 0 0);       /* Старий метод для приховування елемента: обмежує видимість до 0x0 пікселів */
+  overflow: hidden;          /* Приховує будь-який вміст, що виходить за межі елемента */
+} 
+
+
 .team-list {
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-} /* Картка */
-.team-item {
-  background: #ffffff;
-  overflow: hidden;
-} /* Заголовок картки */
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin: 15px 0 5px 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-} /* Текст підзаголовка */
-.team-role {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin: 0 0 15px 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  display: flex; /* робимо список флекс-блоком */
+  flex-wrap: wrap; /* щоб переносились при меншій ширині */
+  justify-content: center; /* вирівнюємо всі картки по центру */
+  gap: 24px; /* відступи між картками */
+  padding: 0; /* прибираємо внутрішні відступи списку */
+  margin: 0; /* прибираємо зовнішні відступи */
+  list-style: none; /* прибираємо крапки */
 }
+
+.team-item {
+  width: calc((100% - 72px) / 4); /* 4 картки в ряд з відступами */
+  background: #ffffff;      /* Задає білий фон */
+border-radius: 0px 0px 4px 4px;  /* Закруглення кута (верхній лівий і верхній правий - без округлення, нижні - 4px) */
+overflow: hidden;         /* Сховає вміст, який виходить за межі контейнера */
+display: flex;            /* Встановлює контейнер як флекс-блок */
+  flex-direction: column;  /* Вертикальне розташування елементів */
+  justify-content: center;  /* Центрування по вертикалі */
+  align-items: center;  /* Центрування по горизонталі */
+}
+
+.team-name {
+  margin-bottom: 8px;
+}
+.team-img {
+  max-width: 100%;  /* Щоб зображення не виходило за межі блоку */
+  height: auto;  /* Зберігає пропорції зображення */
+  display: block;  /* Встановлює зображення як блоковий елемент */
+  margin-bottom: 32px;  /* Відступ між зображенням та текстом */
+  
+}
+
 /* Секція Portfolio */
 .projects {
 }
@@ -284,7 +298,7 @@ body {
 
 .projects-list {
   flex-wrap: wrap;
-
+  display: flex;
   list-style: none;
   margin: 0 auto;
 
