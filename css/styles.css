@@ -331,6 +331,7 @@ display: flex;            /* Встановлює контейнер як фле
 .footer {
   background: #2e2f42;
   font-family: "Roboto", "Raleway", sans-serif;
+  padding: 100px 0
 }
 
 .logo-footer {
@@ -344,6 +345,8 @@ display: flex;            /* Встановлює контейнер як фле
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+  display: inline-block; /* щоб можна було задати розміри і відступи */
+  margin-bottom: 16px;
 }
 .text-footer {
   font-weight: 400;
@@ -351,6 +354,7 @@ display: flex;            /* Встановлює контейнер як фле
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px
 }
 .logo-webs {
   color: #f4f4fd;
