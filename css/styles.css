@@ -290,6 +290,8 @@ display: flex;            /* Встановлює контейнер як фле
 
 /* Секція Portfolio */
 .projects {
+  padding-top: 120px; 
+  padding-bottom: 120px; 
 }
 
 .projects-title {
@@ -300,6 +302,7 @@ display: flex;            /* Встановлює контейнер як фле
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
+  
   
 }
 
