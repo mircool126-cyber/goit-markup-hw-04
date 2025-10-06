@@ -3,6 +3,13 @@
 *::after {
   box-sizing: border-box;
 }
+/* main container */
+.container {
+  width: 1158px; /* ширина макету (може бути 1200px чи інша в Figma) */
+  margin: 0 auto; /* автоматичні відступи зліва і справа */
+ 
+  padding: 32px 0 
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -43,7 +50,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   width: 1158px; /* ширина макету (може бути 1200px чи інша в Figma) */
-  
+  padding: 0 15px; /* відступи зліва і справа */
 }
 
 .logo {
@@ -122,13 +129,7 @@ body {
   color: #404bbf;
 }
 
-/* main container */
-.container {
-  width: 1158px; /* ширина макету (може бути 1200px чи інша в Figma) */
-  margin: 0 auto; /* автоматичні відступи зліва і справа */
- 
-  padding: 32px 0 
-}
+
 
 /* hero-block */
 .hero {
