@@ -126,8 +126,8 @@ body {
 .container {
   width: 1158px; /* ширина макету (може бути 1200px чи інша в Figma) */
   margin: 0 auto; /* автоматичні відступи зліва і справа */
-  padding: 0 15px; /* невеликий "внутрішній" відступ, щоб контент не прилипав */
-  
+ 
+  padding: 32px 0 
 }
 
 /* hero-block */
@@ -216,6 +216,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 8px;
+ 
 }
 
 
@@ -236,7 +237,8 @@ body {
 .team-title{
   font-size: 32px;  /* Розмір шрифту  */
   font-weight: bold;  /*  жирний шрифт */
-  margin-bottom: 24px;  /* Відступ від заголовка до інших елементів */
+
+  margin-bottom: 72px; 
 }
 
 .visually-hidden {
@@ -297,6 +299,7 @@ display: flex;            /* Встановлює контейнер як фле
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
+  
 }
 
 .projects-list {
