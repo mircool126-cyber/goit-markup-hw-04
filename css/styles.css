@@ -10,7 +10,7 @@
  
       padding-left: 15px;
       padding-right: 15px;
-      max-width: 1200px;
+      max-width: 1156px;
      
     }
 
@@ -193,7 +193,6 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
   
-  
  
 }
 
@@ -202,14 +201,14 @@ body {
   margin: 0;
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4); 
+  padding: 0;
 }
 
 .features-item {
   flex: 1;
   text-align: center;
 
-  width: calc((100% - 72px) / 4);
+  
 }
 
 .features-item-title {
@@ -223,6 +222,7 @@ body {
   font-weight: 500;
   margin-bottom: 8px;
   
+  
  
 }
 
@@ -234,6 +234,7 @@ body {
   color: #434455;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  
   
 }
 /* Team-block */
