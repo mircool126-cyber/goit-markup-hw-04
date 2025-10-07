@@ -5,11 +5,15 @@
 }
 /* main container */
 .container {
-  width: 1158px; /* ширина макету (може бути 1200px чи інша в Figma) */
+   /* ширина макету (може бути 1200px чи інша в Figma) */
   margin: 0 auto; /* автоматичні відступи зліва і справа */
  
-  padding: 32px 0 
-}
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 1200px;
+     
+    }
+
 
 body {
   font-family: "Roboto", sans-serif;
