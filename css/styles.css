@@ -221,7 +221,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 8px;
-  width: calc((100% - 72px) / 4); 
+  
  
 }
 
@@ -233,6 +233,7 @@ body {
   color: #434455;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  
 }
 /* Team-block */
 .team {
@@ -257,9 +258,10 @@ body {
   white-space: nowrap;       /* Забороняє перенесення тексту на новий рядок */
   clip-path: inset(100%);    /* Обрізає елемент на 100% з усіх боків, роблячи його повністю невидимим */
   clip: rect(0 0 0 0);       /* Старий метод для приховування елемента: обмежує видимість до 0x0 пікселів */
-  overflow: hidden; 
-           /* Приховує будь-який вміст, що виходить за межі елемента */
+width: calc((100% - 72px) / 4); 
+  overflow: hidden; /* Приховує будь-який вміст, що виходить за межі елемента */
 } 
+
 
 
 .team-list {
