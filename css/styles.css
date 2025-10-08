@@ -327,6 +327,7 @@ display: flex;            /* Встановлює контейнер як фле
 column-gap: 24px; 
   justify-content: center;
   row-gap: 48px; 
+  padding-left: 0;
 
 }
 
