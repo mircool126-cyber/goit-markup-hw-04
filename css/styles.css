@@ -162,6 +162,8 @@ body {
   margin-bottom: 20px;
   color: #ffffff;
   max-width: 496px;
+  padding: 0;
+  margin: 0;
 }
 
 .hero-btn {
@@ -274,6 +276,7 @@ body {
   padding: 0; /* прибираємо внутрішні відступи списку */
   margin: 0; /* прибираємо зовнішні відступи */
   list-style: none; /* прибираємо крапки */
+  
 }
 
 .team-item {
@@ -285,6 +288,7 @@ display: flex;            /* Встановлює контейнер як фле
   flex-direction: column;  /* Вертикальне розташування елементів */
   justify-content: center;  /* Центрування по вертикалі */
   align-items: center;  /* Центрування по горизонталі */
+ 
 }
 
 .team-name {
@@ -294,11 +298,12 @@ display: flex;            /* Встановлює контейнер як фле
   max-width: 100%;  /* Щоб зображення не виходило за межі блоку */
   height: auto;  /* Зберігає пропорції зображення */
   display: block;  /* Встановлює зображення як блоковий елемент */
-  margin-bottom: 32px;  /* Відступ між зображенням та текстом */
+  margin-bottom: 8px; /* було 32px- зменшив */
+  
   
 }
 .team-content{
-  padding: 32px 0;  /* Відступи всередині блоку з текстом */
+  padding: 8px 0; /* було 32px — зменшив  */
 }
 
 /* Секція Portfolio */
