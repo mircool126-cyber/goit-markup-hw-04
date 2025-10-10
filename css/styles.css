@@ -162,8 +162,7 @@ body {
   margin-bottom: 20px;
   color: #ffffff;
   max-width: 496px;
-  padding-bottom: 48px;
-  margin: 0;
+  margin-bottom: 48px; 
 }
 
 .hero-btn {
@@ -180,9 +179,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
-  
+ margin: 0;
 }
+
 .hero-btn:hover {
   background-color: #404bbf;
 }
