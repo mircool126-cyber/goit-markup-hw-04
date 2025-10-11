@@ -375,8 +375,9 @@ width: calc((100% - 48px) / 3);
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin: 16px 16px 8px;
-  
+ 
+ 
+
   
 }
 
@@ -386,9 +387,7 @@ width: calc((100% - 48px) / 3);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
- padding-left: 16px;
-  padding-right: 16px;
-  
+ margin-top: 8px;
 
 }
 .projects-card {
