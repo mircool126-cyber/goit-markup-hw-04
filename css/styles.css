@@ -273,98 +273,100 @@ background-repeat: no-repeat;
 .team {
   padding: 120px 0;
   background-color: #f4f4fd;
-  text-align: center; /* Центрування заголовка */
-  
+  text-align: center;
 }
-.team-title{
-font-family: "Roboto",  sans-serif;
+
+.team-title {
   margin-bottom: 72px;
   font-weight: 700;
-font-size: 36px;
-line-height: 111%;
-letter-spacing: 0.02em; 
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
-
-.visually-hidden {
-  position: absolute;        /* Встановлює елемент поза потоком документа, щоб його не видно було на екрані */
-  width: 1px;                /* Ширина елемента — дуже мала, щоб він не був видимим */
-  height: 1px;               /* Висота елемента — також дуже мала */
-  margin: -1px;              /* Відступи елемента від його контейнера — зменшені, щоб приховати елемент */
-  border: 0;                 /* Прибирає будь-які межі, щоб елемент не був видимим */
-  padding: 0;                /* Встановлює внутрішні відступи на 0 */
-  white-space: nowrap;       /* Забороняє перенесення тексту на новий рядок */
-  clip-path: inset(100%);    /* Обрізає елемент на 100% з усіх боків, роблячи його повністю невидимим */
-  clip: rect(0 0 0 0);       /* Старий метод для приховування елемента: обмежує видимість до 0x0 пікселів */
-
-  overflow: hidden; /* Приховує будь-який вміст, що виходить за межі елемента */
-} 
-
-
 
 .team-list {
-  display: flex; /* робимо список флекс-блоком */
-  flex-wrap: wrap; /* щоб переносились при меншій ширині */
-  justify-content: center; /* вирівнюємо всі картки по центру */
-  gap: 24px; /* відступи між картками */
-  padding: 0; /* прибираємо внутрішні відступи списку */
-  margin: 0; /* прибираємо зовнішні відступи */
-  list-style: none; /* прибираємо крапки */
-  
-}
-
-.team-item {
-  width: calc((100% - 72px) / 4); /* 4 картки в ряд з відступами */
-  background: #ffffff;      /* Задає білий фон */
-border-radius: 0px 0px 4px 4px;  /* Закруглення кута (верхній лівий і верхній правий - без округлення, нижні - 4px) */
-overflow: hidden;         /* Сховає вміст, який виходить за межі контейнера */
-display: flex;            /* Встановлює контейнер як флекс-блок */
-  flex-direction: column;  /* Вертикальне розташування елементів */
-  justify-content: center;  /* Центрування по вертикалі */
-  align-items: center;  /* Центрування по горизонталі */
- padding: 0;
- margin: 0;
-}
-
-.team-name {
-  margin-bottom: 8px;
-  font-weight: 500;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: 0.02em;
-}
-.team-img {
-  max-width: 100%;  /* Щоб зображення не виходило за межі блоку */
-  height: auto;  /* Зберігає пропорції зображення */
-  display: block;  /* Встановлює зображення як блоковий елемент */
-  margin-bottom: 0px; /* було 32px- зменшив */
-  
-  
-}
-.team-content{
-  padding: 32px 0; /* було 32px — зменшив  */
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.team-role{
-  padding: 0;
-    
-  font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-
-}
-
-.icon-social-media{
-  width: 40px;
-  height: 40px;
-}
-.social-icons {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  width: 264px;
+  overflow: hidden;
+}
+
+.team-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-content {
+  padding: 32px 0;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.team-role {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-bottom: 8px;
+}
+
+/* соцмережі */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color, #4d5ae5);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--light-color, #f4f4fd);
 }
 
 /* Секція Portfolio */
