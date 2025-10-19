@@ -218,59 +218,53 @@ background-repeat: no-repeat;
   padding-top: 120px;
   padding-bottom: 120px;
   font-family: "Roboto", sans-serif;
-  
- 
 }
 
 .features-list {
   list-style: none;
   margin: 0;
+  padding: 0;
   display: flex;
   gap: 24px;
-  padding: 0;
 }
 
 .features-item {
   flex: 1;
- 
-
-  
 }
 
+/* 🔹 Основний контейнер для іконки */
+.features-item-icon {
+  display: flex; /* ✅ для позиціювання елемента */
+  align-items: center; /* ✅ вирівнювання по вертикалі */
+  justify-content: center; /* ✅ вирівнювання по горизонталі */
+  height: 112px; /* ✅ висота блоку */
+  background-color: #f4f4fd; /* ✅ фон */
+  border-radius: 4px; /* ✅ закруглення */
+  border: 1px solid #8e8f99; /* ✅ рамка */
+  margin-bottom: 8px; /* ✅ відступ під іконкою */
+}
+
+/* 🔹 Стилі для svg */
+.features-item-icon svg {
+  width: 64px; /* ✅ ширина */
+  height: 64px; /* ✅ висота */
+}
+
+/* 🔹 Текст */
 .features-item-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 8px;
-  
 }
-
-
 
 .features-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;  
-  
-}
-
-.icon {
-  display: inline-block;
-  
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-
-.icon-Icon {
- 
-  border: 1px solid #8E8F99;
 }
 
 
