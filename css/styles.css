@@ -351,13 +351,14 @@ background-repeat: no-repeat;
 }
 
 /* соцмережі */
-.social-list-team {
+.team .social-list{
   display: flex;
   justify-content: center;
   gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 .social-item {
