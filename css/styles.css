@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+p{
+  margin: 0;
+}
 /* main container */
 .container {
    /* ширина макету (може бути 1200px чи інша в Figma) */
@@ -510,16 +513,16 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-container {
   display: flex;
   align-items: baseline;
-  
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .footer-content {
+  display: flex;               /* 🔹 додаємо */
+  flex-direction: column;      /* 🔹 розташовуємо елементи вертикально */
   max-width: 500px;
   margin-right: 120px;
-  
 }
 
 .logo-footer {
@@ -532,7 +535,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
- 
+  margin-bottom: 16px;         /* 🔹 тепер працює */
 }
 
 .logo-webs {
@@ -544,9 +547,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #FFFFFF ;
+  color: #FFFFFF;
   max-width: 264px;
-  margin-bottom: 16px;
 }
 
 /* блок соцмереж */
@@ -554,7 +556,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
 }
 
 .title-social {
