@@ -272,6 +272,18 @@ background-repeat: no-repeat;
   letter-spacing: 0.02em;
   color: #434455;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+  white-space: nowrap;
+}
 
 
 
@@ -370,8 +382,8 @@ background-repeat: no-repeat;
 }
 
 .social-icon {
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
   fill: var(--light-color, #f4f4fd);
   
 }
