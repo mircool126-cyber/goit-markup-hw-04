@@ -510,7 +510,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -518,6 +518,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer-content {
   max-width: 500px;
+  margin-right: 120px;
+  
 }
 
 .logo-footer {
@@ -530,7 +532,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-bottom: 16px;
+ 
 }
 
 .logo-webs {
@@ -542,7 +544,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--white-color, #ffffff);
+  color: #FFFFFF ;
   max-width: 264px;
   margin-bottom: 16px;
 }
@@ -552,7 +554,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 120px;
+  
 }
 
 .title-social {
